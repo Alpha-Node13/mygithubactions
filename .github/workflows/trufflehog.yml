@@ -1,0 +1,17 @@
+name: TruffleHog Secret Scan
+
+on:
+  workflow_dispatch:   # ✅ Manual trigger only
+
+jobs:
+  trufflehog:
+    name: Scan for secrets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run TruffleHog
+        uses: trufflesecurity/trufflehog@main
+        with:
+          path: .   # Scan entire repo
