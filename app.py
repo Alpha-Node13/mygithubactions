@@ -1,13 +1,13 @@
 import requests
 
 # ❌ Hardcoded AWS secret 
-AWS_SECRET_KEY = "AKIAIOSFODNN7EXAMPLE"
+AWS_SECRET_KEY = "AKIAIOSFODNN7EXAMPLE123"
 
 # ❌ Hardcoded GitHub token 
-GITHUB_TOKEN = "ghp_1234567890abcdefghijklmnopqrstuvwxyzABCDEFG"
+GITHUB_TOKEN = "ghp_abCDefGhijkLmnoPQRStuvWxyz1234567890"
 
 # ❌ Hardcoded Stripe API key
-STRIPE_API_KEY = "sk_test_51StripeKey1234567890"
+STRIPE_API_KEY = "sk_test_4eC39HqLyjWDarjtT1zdp7dc"
 
 
 def fetch_data():
