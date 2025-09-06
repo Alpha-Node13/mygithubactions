@@ -1,20 +1,19 @@
 name: TruffleHog Secret Scan
 
 on:
-  workflow_dispatch:   # ✅ Manual trigger only
+  workflow_dispatch:
 
 jobs:
   trufflehog:
-    name: Scan for secrets
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout full history
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0 
+          fetch-depth: 0   # ✅ get entire git history
 
-      - name: Run TruffleHog (Git history)
+      - name: Run TruffleHog on git history
         uses: trufflesecurity/trufflehog@main
         with:
           scan: git
-          path: .
+          path: ${{ github.workspace }}
