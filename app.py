@@ -1,13 +1,13 @@
 import requests
 
 # ❌ Hardcoded AWS secret (FAKE example)
-AWS_SECRET_KEY = ""
+AWS_SECRET_KEY = "AKIAFAKE1234567890FAKE"
 
 # ❌ Hardcoded GitHub token (FAKE example)
-GITHUB_TOKEN = ""
+GITHUB_TOKEN = "ghp_fakeTokenForTesting1234567890abcdef"
 
 # ❌ Hardcoded Stripe API key (FAKE example)
-STRIPE_API_KEY = ""
+STRIPE_API_KEY = "sk_test_51FakeStripeKey1234567890"
 
 
 def fetch_data():
