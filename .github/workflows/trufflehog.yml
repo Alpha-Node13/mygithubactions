@@ -15,3 +15,4 @@ jobs:
         uses: trufflesecurity/trufflehog@main
         with:
           path: .   # Scan entire repo
+          extra_args: --git --fail
