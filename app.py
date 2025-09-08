@@ -4,7 +4,7 @@ import requests
 AWS_SECRET_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"
 
 # ❌ Hardcoded GitHub token 
-GITHUB_TOKEN = "ghp_abCDefGhijkLmnoPQRStuvWxyz1234567890"
+GITHUB_TOKEN = "ghp_123213"
 
 # ❌ Hardcoded Stripe API key
 STRIPE_API_KEY = "sk_live_1234567890abcdefghijklmnop"
